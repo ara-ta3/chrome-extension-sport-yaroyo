@@ -8,7 +8,8 @@
         };
 
         var countNotification = function(html) {
-            return 0;
+            var countDom = html.querySelector("#navi-in > li > a > span.midoku");
+            return countDom ? countDom.innerText : 0;
         };
 
         var promptLogin = function() {

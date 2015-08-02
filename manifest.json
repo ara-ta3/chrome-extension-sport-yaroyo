@@ -3,12 +3,6 @@
     "name": "スポーツやろうよ連絡通知",
     "description": "スポーツやろうよのページで通知が来ているかどうか教えてくれる拡張機能",
     "version": "1.0",
-    "content_scripts": [
-        {
-            "matches": [ "http://*/*" ],
-            "js": [ "main.js" ]
-        }
-    ],
     "background": {
         "scripts": ["background.js"]
     },
