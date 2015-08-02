@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "スポーツやろうよ連絡通知",
+    "description": "スポーツやろうよのページで通知が来ているかどうか教えてくれる拡張機能",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [ "http://*/*" ],
+            "js": [ "main.js" ]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "http://www.net-menber.com/"
+    ],
+    "browser_action": {
+        "default_icon": "icon_128.png",
+        "name": "net member notification"
+    }
+}
